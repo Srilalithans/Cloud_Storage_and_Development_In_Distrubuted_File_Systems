@@ -1,5 +1,4 @@
 # Innovations in Distributed Cloud Storage
- Repository for TDC Assignment
 
 Welcome to the Implementation Overview for the Term Paper on TDC
 Here, we’ll explain the steps used to implement various innovations in distributed cloud storage as outlined in the Term Paper:
