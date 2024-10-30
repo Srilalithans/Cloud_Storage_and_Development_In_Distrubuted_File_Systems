@@ -1,8 +1,8 @@
-# Distributed_Cloud_Storage
+# Innovations in Distributed Cloud Storage
  Repository for TDC Assignment
 
 Welcome to the Implementation Overview for the Term Paper on TDC
-Here, I’ll explain the steps used to implement various innovations in distributed cloud storage as outlined in the Term Paper:
+Here, we’ll explain the steps used to implement various innovations in distributed cloud storage as outlined in the Term Paper:
 
 1. Storage Scalability
 i) In the AWS Management Console, select Services and navigate to S3.
