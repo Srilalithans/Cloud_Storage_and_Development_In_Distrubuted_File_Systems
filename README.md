@@ -13,7 +13,7 @@ vi) Save the rule to automate transitioning objects between storage tiers, enabl
 
 ```json
 
-Bucket Policy:
+"Bucket Policy":
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -57,7 +57,6 @@ Fault Tolerance.json
       }
     }
   ]
-}
 
 ```
 
