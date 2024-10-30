@@ -1,8 +1,7 @@
-# Distributed_Cloud_Storage
- Repository for TDC Assignment
+# Innovations in Distributed Cloud Storage
 
 Welcome to the Implementation Overview for the Term Paper on TDC
-Here, I’ll explain the steps used to implement various innovations in distributed cloud storage as outlined in the Term Paper:
+Here, we’ll explain the steps used to implement various innovations in distributed cloud storage as outlined in the Term Paper:
 
 1. Storage Scalability
 i) In the AWS Management Console, select Services and navigate to S3.
@@ -12,8 +11,9 @@ iv) After the bucket is created, go to Management and select Lifecycle rules to 
 v) Click Create lifecycle rule, name it (e.g., Transition-to-Glacier), and set conditions for transitioning objects to a cheaper storage class, like Glacier, after a certain number of days (e.g., 30 days after the last modification).
 vi) Save the rule to automate transitioning objects between storage tiers, enabling storage scalability.
 
+```json
 
-Bucket Policy:
+"Bucket Policy":
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -26,6 +26,7 @@ Bucket Policy:
     ]
 }
 
+```
 
 2. Fault Tolerance
 i) In the AWS Management Console, go to S3 and open the bucket created for scalable storage.
@@ -42,6 +43,8 @@ Add an S3 Object Created trigger to invoke the Lambda function whenever an objec
 
 Fault Tolerance.json
 
+```json
+
 "Records": [
     {
       "s3": {
@@ -54,8 +57,8 @@ Fault Tolerance.json
       }
     }
   ]
-}
 
+```
 
 
 3. Data Consistency and Integrity
@@ -66,6 +69,8 @@ iii) In the Lambda Console, create a new function and choose Python as the runti
 iv) Add an S3 Object Created and Object Deleted trigger to invoke the function when an object is added or modified in the bucket.
 
 Code for Data Consistency Check Using MD5 Checksum:
+```json
+
 {
   "Records": [
     {
@@ -88,3 +93,5 @@ Code for Data Consistency Check Using MD5 Checksum:
     }
   ]
 }
+
+```
