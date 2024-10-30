@@ -1,0 +1,5 @@
+Object Storage Implementation:
+https://buckect1a.s3.us-east-2.amazonaws.com/active/image.png
+
+Data Consistency and data integrity:
+https://buckect1a.s3.us-east-2.amazonaws.com/active/Cloud_Summary.pdf

@@ -1,0 +1,13 @@
+"Records": [
+    {
+      "s3": {
+        "bucket": {
+          "name": "buckect1a"
+        },
+        "object": {
+          "key": "image.png"
+        }
+      }
+    }
+  ]
+}

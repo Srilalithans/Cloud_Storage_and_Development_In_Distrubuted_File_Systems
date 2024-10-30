@@ -1,0 +1,22 @@
+{
+  "Records": [
+    {
+      "eventVersion": "2.1",
+      "eventSource": "aws:s3",
+      "awsRegion": "us-east-1",
+      "eventTime": "2024-10-30T12:00:00.000Z",
+      "eventName": "ObjectCreated:Put",
+      "s3": {
+        "bucket": {
+          "name": "buckect1a"
+        },
+        "object": {
+          "key": "active/image.png",
+          "size": 12345,
+          "eTag": "abcd1234ef5678ghijkl90mn1234opqr",
+          "versionId": "_Ntxl_bMXF82gYfhpmKjVvZ2LjPTclCh"
+        }
+      }
+    }
+  ]
+}
