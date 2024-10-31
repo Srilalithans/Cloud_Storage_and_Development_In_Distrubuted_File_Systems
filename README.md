@@ -33,11 +33,15 @@ vi) Save the rule to automate transitioning objects between storage tiers, enabl
 
 ```
 
-2. **Fault Tolerance**
+### 2. **Fault Tolerance**
 i) In the AWS Management Console, go to S3 and open the bucket created for scalable storage.
+
 ii) Go to Properties, scroll to the Replication section, and click Create replication rule.
+
 iii) Name the rule and enable Cross-Region Replication (CRR) to ensure data redundancy.
+
 iv) Select a destination bucket in another region (create one if necessary), and configure permissions to allow replication.
+
 v) In IAM Roles, choose Create a new role to allow S3 to manage replication. Save the settings to enable cross-region replication.
 
 Setting Up Lambda Monitoring for Fault Tolerance:
@@ -66,11 +70,14 @@ Fault Tolerance.json
 ```
 
 
-3. **Data Consistency and Integrity**
+### 3. **Data Consistency and Integrity**
 
 i) In the S3 Console, select your bucket and go to Properties. Scroll down to Bucket Versioning and enable it. This allows tracking of multiple versions of objects, preserving data changes for consistency.
+
 ii) Set up a Lambda function (e.g., S3ConsistencyCheck) to verify data integrity on object creation or modification.
+
 iii) In the Lambda Console, create a new function and choose Python as the runtime.
+
 iv) Add an S3 Object Created and Object Deleted trigger to invoke the function when an object is added or modified in the bucket.
 
 Code for Data Consistency Check Using MD5 Checksum:
