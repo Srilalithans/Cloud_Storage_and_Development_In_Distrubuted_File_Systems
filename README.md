@@ -4,17 +4,17 @@ Welcome to the Implementation Overview for the Term Paper on TDC
 Here, we’ll explain the steps used to implement various innovations in distributed cloud storage as outlined in the Term Paper:
 
 1. ### **Storage Scalability**
--i) In the AWS Management Console, select Services and navigate to S3. 
+i) In the AWS Management Console, select Services and navigate to S3. 
 
--ii) Select Buckets and click on Create bucket. Choose a name for your bucket (e.g., scalable-bucket), select the region, and configure the settings as needed. Leave Block Public Access settings checked if this bucket doesn’t need to be public.
+ii) Select Buckets and click on Create bucket. Choose a name for your bucket (e.g., scalable-bucket), select the region, and configure the settings as needed. Leave Block Public Access settings checked if this bucket doesn’t need to be public.
 
--iii) Click Create bucket to create your storage.
+iii) Click Create bucket to create your storage.
 
--iv) After the bucket is created, go to Management and select Lifecycle rules to configure storage scalability rules.
+iv) After the bucket is created, go to Management and select Lifecycle rules to configure storage scalability rules.
 
--v) Click Create lifecycle rule, name it (e.g., Transition-to-Glacier), and set conditions for transitioning objects to a cheaper storage class, like Glacier, after a certain number of days (e.g., 30 days after the last modification).
+v) Click Create lifecycle rule, name it (e.g., Transition-to-Glacier), and set conditions for transitioning objects to a cheaper storage class, like Glacier, after a certain number of days (e.g., 30 days after the last modification).
 
--vi) Save the rule to automate transitioning objects between storage tiers, enabling storage scalability.
+vi) Save the rule to automate transitioning objects between storage tiers, enabling storage scalability.
 
 ```json
 
