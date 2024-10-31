@@ -3,7 +3,7 @@
 Welcome to the Implementation Overview for the Term Paper on TDC
 Here, we’ll explain the steps used to implement various innovations in distributed cloud storage as outlined in the Term Paper:
 
-1. Storage Scalability
+1.**Storage Scalability**
 i) In the AWS Management Console, select Services and navigate to S3.
 ii) Select Buckets and click on Create bucket. Choose a name for your bucket (e.g., scalable-bucket), select the region, and configure the settings as needed. Leave Block Public Access settings checked if this bucket doesn’t need to be public.
 iii) Click Create bucket to create your storage.
@@ -28,7 +28,7 @@ vi) Save the rule to automate transitioning objects between storage tiers, enabl
 
 ```
 
-2. Fault Tolerance
+2. **Fault Tolerance**
 i) In the AWS Management Console, go to S3 and open the bucket created for scalable storage.
 ii) Go to Properties, scroll to the Replication section, and click Create replication rule.
 iii) Name the rule and enable Cross-Region Replication (CRR) to ensure data redundancy.
@@ -61,7 +61,7 @@ Fault Tolerance.json
 ```
 
 
-3. Data Consistency and Integrity
+3. **Data Consistency and Integrity**
 
 i) In the S3 Console, select your bucket and go to Properties. Scroll down to Bucket Versioning and enable it. This allows tracking of multiple versions of objects, preserving data changes for consistency.
 ii) Set up a Lambda function (e.g., S3ConsistencyCheck) to verify data integrity on object creation or modification.
