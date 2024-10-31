@@ -3,7 +3,7 @@
 Welcome to the Implementation Overview for the Term Paper on TDC
 Here, we’ll explain the steps used to implement various innovations in distributed cloud storage as outlined in the Term Paper:
 
-1. ### **Storage Scalability**
+### 1. **Storage Scalability**
 i) In the AWS Management Console, select Services and navigate to S3. 
 
 ii) Select Buckets and click on Create bucket. Choose a name for your bucket (e.g., scalable-bucket), select the region, and configure the settings as needed. Leave Block Public Access settings checked if this bucket doesn’t need to be public.
